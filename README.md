@@ -1,7 +1,7 @@
 # CodeKrrs
 Kelompok:
-# Kensa
-# Venny
-# Dameethia
-# Elra
-# James
+Kensa
+Venny
+Dameethia
+Elra
+James
