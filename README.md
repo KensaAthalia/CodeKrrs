@@ -1,5 +1,5 @@
 # CodeKrrs
-# Kelompok:
+Kelompok:
 # Kensa
 # Venny
 # Dameethia
