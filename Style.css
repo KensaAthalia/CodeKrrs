@@ -16,13 +16,23 @@
     min-height: 800px;
     background-size: cover;
   }
+
+  .button-login{
+    height:-2cm;
+    width: 3cm;
+  }
+
+  .header{
+    height:2.5cm;
+    width:50cm;
+    background-color: #A01627;
+  }
   .center{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: white;
+    top: 20%;
+    left: 65%;
+    width: 500px;
+    background:white;
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
   }
@@ -38,7 +48,8 @@
   form .txt_field{
     position: relative;
     border-bottom: 2px solid #adadad;
-    margin: 30px 0;
+    background: #A01627;
+    margin: 10px 0;
   }
   .txt_field input{
     width: 100%;
@@ -46,7 +57,7 @@
     height: 40px;
     font-size: 16px;
     border: none;
-    background: none;
+    background: #A01627;
     outline: none;
   }
   .txt_field label{
@@ -120,7 +131,7 @@
     height :350px;
     width : 500px;
     background-color : gray;
-    margin-left: 23%; 
+    margin-left: 10%; 
     margin-top:8%;
   }
 
@@ -141,3 +152,14 @@
   .isi-form{
     text-align:left;
   }
+
+  .login-form{
+    height:1cm;
+    background-color:#A01627;
+    margin-left: -0.16%;
+    margin-top: -3%;
+  }
+
+  
+
+
