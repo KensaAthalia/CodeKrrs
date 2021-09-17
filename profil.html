@@ -2,116 +2,128 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
     <title>Mahasiswa - Profil</title>
     <style>
+      #content {
+      min-height: calc(100vh - 30px);
+      }
       nav a{
         text-decoration: none!important;
         color: white;
         text-align:justify;
+        margin-left: 9%;
       }
-      #circle {
-      width: 70px;
-      height: 70px;
-      -webkit-border-radius: 35px;
-      -moz-border-radius: 35px;
-      border-radius: 35px;
-      background: white;
-    }
+      .nav_img{
+      width: 30px; 
+      height: 30px; 
+      float: left;
+      }
+      .nav-tabs{
+        border-bottom: 1pt solid black!important;
+        font-size: 14pt;
+      }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <header class="container-fluid" style="background-color: #7E1724; padding: 10px;">
-        <div class="row">
-            <div class="col">
-                <img src="asset/untarputih.png" alt="logo" style="width: 60px; margin-left: 5px;">
-            </div>
-            <div class="col-10" style="color: white;">
-               <p style="font-weight: bold;font-size: xx-large;">KRRS ONLINE MAHASISWA</p> 
-            </div>
-            <div class="col-1" style="align-self: right;">
-                <a href="#" type="button" class="btn" style="background-color: white; border-color: #A01627;color: #A01627;">
-                    <div style="font-weight: bold;">Logout</div> 
-                </a>
-            </div>
-        </div>
-    </header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-2" style="background-color: #A01627;">
-                <div class="container-fluid">
-                    <img src="asset/jennie.png" alt="jennie"
-                      style="width: 70px; height: 70px; border-radius: 50%; margin-left: 25%; margin-top: 5%;">
-                      <div style="text-align: center; color: white;">
-                        <p>
-                          Jennie
-                          <br>
-                          Mahasiswa-NIM
-                        </p>
-                      </div>
-                  </div>
-                <nav class="nav flex-column">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="home.html">&nbsp &nbsp &nbsp Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <img src="asset/PROFIL.png" alt="" style="width: 30px; height: 30px; float: left;">
-                        <a class="nav-link" href="profil.html">Profil</a>
-                      </li>
-                      <li class="nav-item">
-                        <img src="asset/PROFIL.png" alt="" style="width: 30px; height: 30px; float: left;">
-                        <a class="nav-link" href="https://lintar.untar.ac.id/">Lintar Mahasiswa</a>
-                      </li>
-                      <li class="nav-item">
-                        <img src="asset/STATUS REGISTRASI.png" alt="" style="width: 30px; height: 30px; float: left;">
-                        <a class="nav-link active" href="#">Status Registrasi</a>
-                      </li>
-                      <li class="nav-item">
-                        <img src="asset/PANDUAN KRRS.png" alt="" style="width: 30px; height: 30px; float: left;">
-                        <a class="nav-link" href="#">Panduan KRRS</a>
-                      </li>
-                      <li class="nav-item">
-                        <img src="asset/KRRS REGULER.png" alt="" style="width: 30px; height: 30px; float: left;">
-                        <a class="nav-link" href="#">KRRS Reguler</a>
-                      </li>
-                      <li class="nav-item">
-                        <img src="asset/PRINT KRRS.png" alt="" style="width: 30px; height: 30px; float: left;">
-                        <a class="nav-link" href="#">Cetak KRRS</a>
-                      </li>
-                      <li class="nav-item">
-                        <img src="asset/PROFIL.png" alt="" style="width: 30px; height: 30px; float: left;">
-                        <a class="nav-link" href="#">Contact Us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">&nbsp &nbsp &nbsp Logout</a>
-                      </li>
-                    </ul>
-                  </nav>
-            </div>
-            <div class="col">
-              <div class="container mt-5">
-                  <div>
-                      Profil
-                  </div>
-                <a href="" type="button" class="btn" style="background-color: #A01627; color: white;">Biodata</a>
-                <a href="resetpassword.html" type="button" class="btn" style="background-color: #A01627; color: white;">Ganti Password</a>
-              </div>
-            </div>
-        </div>
-        <div class="row" style="background-color: #7E1724;align-self:bottom;" >
-          <div class="col-2" style="background-color: #A01627;">
-          </div>
-          <div class="col-8" style="text-align: center; color: white;">
-            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-             Copyright UNTAR 2021 All Rights Reserved  
-          </div>
-        </div>
+  <header class="container-fluid" style="background-color: #7E1724; padding: 10px;">
+    <div class="row">
+      <div class="col">
+        <img src="asset/untarputih.png" alt="logo" style="width: 60px; margin-left: 5px;">
+      </div>
+      <div class="col-9" style="color: white;">
+        <p style="font-weight: bold;font-size: xx-large;">KRRS ONLINE MAHASISWA</p> 
+      </div>
+      <div class="col-2">
+        <a href="#" type="button" class="btn" style="background-color: white; color: #A01627; width: 110px; float: right; border-radius: 30px; margin: 10%;">
+          <img src="asset/logout.png" alt="exit" style="float: left; width: 25px; padding: 0;">  
+          <div style="font-weight: bold; float: left; margin-left: 5px;">Logout</div> 
+        </a>
+      </div>
     </div>
+  </header>
+  <div id="content">
+    <div class="container-auto">
+      <div class="row">
+          <div class="col-2 pl-4" style="background-color: #A01627; min-height: 100vh;">
+              <div class="container-auto" style="margin-top: 10px;">
+                  <img src="asset/jennie.png" alt="jennie"
+                    style="width: 70px; height: 70px; border-radius: 50%; margin-left: 30%; margin-top: 5%;">
+                    <div style="text-align: center; color: white;">
+                      <p>
+                        Jennie
+                        <br>
+                        Mahasiswa-NIM
+                      </p>
+                    </div>
+                </div>
+              <nav class="nav flex-column ml-2">
+                <li class="nav-item">
+                  <img src="asset/HOME WHITE.png" alt="profil" class="nav_img">
+                  <a class="nav-link active" href="home.html"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/PROFIL.png" alt="profil" class="nav_img">
+                  <a class="nav-link" href="profil.html">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <p style="font-size: 6pt;font-weight: bold; float: left; color: white; margin-top: 15px;">LINTAR</p>
+                  <a class="nav-link" href="https://lintar.untar.ac.id/">Lintar Mahasiswa</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/STATUS REGISTRASI.png" alt="status" class="nav_img">
+                  <a class="nav-link" href="#">Status Registrasi</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/PANDUAN KRRS.png" alt="panduan" class="nav_img">
+                  <a class="nav-link" href="#">Panduan KRRS</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/KRRS REGULER.png" alt="krrs" class="nav_img">
+                  <a class="nav-link" href="#">KRRS Reguler</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/PRINT KRRS.png" alt="cetak" class="nav_img">
+                  <a class="nav-link" href="#">Cetak KRRS</a>
+                </li>
+                <li class="nav-item">
+                  <i data-feather="phone" style="color: white; width: 30px;float: left;"></i>
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/EXIT WHITE.png" alt="exit" class="nav_img">
+                  <a class="nav-link" href="#">Logout</a>
+                </li>
+              </nav>
+          </div>
+          <div class="col">
+            <div class="container-fluid">
+              <!--Ini tempat buat isi pagenya-->
+              <ul class="nav nav-tabs">
+                <li class="nav-items">
+                  <a class="nav-link active" href="#" style="font-weight: bold;">Biodata</a>
+                </li>
+                <li class="nav-link">
+                  <a class="nav-link" href="resetpassword.html" style="font-weight: bold;">Ganti Password</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  <footer style="background-color: #A01627; color: white; text-align: center; height: 30px;">
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    Copyright UNTAR 2021 All Rights Reserved  
+  </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+    <script>
+      feather.replace()
+    </script>
 </body>
 </html>
+
