@@ -162,7 +162,7 @@ input[type="submit"]:hover{
   border-top-right-radius: 20px;
 }
 
-input[type=text]{
+input[type=text],[type=password]{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -171,6 +171,8 @@ input[type=text]{
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+
 
 
 
