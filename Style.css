@@ -171,6 +171,10 @@ input[type=text],[type=password]{
   border-radius: 4px;
   box-sizing: border-box;
 }
+.center h3{
+  text-align: center;
+  padding: 5px 0;
+}
 
 
 
