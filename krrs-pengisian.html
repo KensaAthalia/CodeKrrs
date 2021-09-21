@@ -1,0 +1,341 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <title>Mahasiswa - KRRS Reguler</title>
+    <style>
+     #content {
+      min-height: calc(100vh - 30px);
+      }
+      nav a{
+        text-decoration: none!important;
+        color: white;
+        text-align:justify;
+        margin-left: 9%;
+      }
+      .nav_img{
+      width: 30px; 
+      height: 30px; 
+      float: left;
+      }
+      .nav-tabs{
+        border-bottom: 1pt solid black!important;
+        font-size: 14pt;
+        margin-top: 5px;
+        text-align: center;
+      }
+      .data{
+        margin: 10px;
+        padding:10px;
+        border: 1pt solid black;
+        border-radius: 10px;
+        float: left;
+      }
+      .form{
+        border:1px solid black;
+        height :200px;
+        width : 800px;
+        margin-left: 10px; 
+        margin-top:7px;
+        border-color: black;
+        border-radius: 10px;
+      }
+      .form-krrs{
+        border:1px solid black;
+        height :550px;
+        width : 100%;
+        margin-left: 10px; 
+        margin-top:7px;
+        border-color: black;
+        border-radius: 10px;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <header class="container-fluid" style="background-color: #7E1724; padding: 10px;">
+    <div class="row">
+      <div class="col">
+        <img src="asset/untarputih.png" alt="logo" style="width: 60px; margin-left: 5px;">
+      </div>
+      <div class="col-9" style="color: white;">
+        <p style="font-weight: bold;font-size: xx-large;">KRRS ONLINE MAHASISWA</p> 
+      </div>
+      <div class="col-2">
+        <a href="#" type="button" class="btn" style="background-color: white; color: #A01627; width: 130px; float: right; border-radius: 30px; margin: 10%;">
+          <img src="asset/logout.png" alt="exit" style="float: left; width: 25px; padding: 0;">  
+          <div style="font-weight: bold; float: left; margin-left: 5px;">Logout</div> 
+        </a>
+      </div>
+    </div>
+  </header>
+  <div id="content">
+    <div class="container-auto">
+      <div class="row">
+          <div class="col-2 pl-4" style="background-color: #A01627; min-height: 100vh;">
+              <div class="container-auto" style="margin-top: 10px;">
+                  <img src="asset/jennie.png" alt="jennie"
+                    style="width: 70px; height: 70px; border-radius: 50%; margin-left: 30%; margin-top: 5%;">
+                    <div style="text-align: center; color: white;">
+                      <p>
+                        Jennie
+                        <br>
+                        Mahasiswa-NIM
+                      </p>
+                    </div>
+                </div>
+              <nav class="nav flex-column ml-2">
+                <li class="nav-item">
+                  <img src="asset/HOME WHITE.png" alt="profil" class="nav_img">
+                  <a class="nav-link active" href="home.html"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/PROFIL.png" alt="profil" class="nav_img">
+                  <a class="nav-link" href="profil.html">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <p style="font-size: 6pt;font-weight: bold; float: left; color: white; margin-top: 15px;">LINTAR</p>
+                  <a class="nav-link" href="https://lintar.untar.ac.id/">Lintar Mahasiswa</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/STATUS REGISTRASI.png" alt="status" class="nav_img">
+                  <a class="nav-link" href="#">Status Registrasi</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/PANDUAN KRRS.png" alt="panduan" class="nav_img">
+                  <a class="nav-link" href="#">Panduan KRRS</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/KRRS REGULER.png" alt="krrs" class="nav_img">
+                  <a class="nav-link" href="krrs.html">KRRS Reguler</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/PRINT KRRS.png" alt="cetak" class="nav_img">
+                  <a class="nav-link" href="#">Cetak KRRS</a>
+                </li>
+                <li class="nav-item">
+                  <i data-feather="phone" style="color: white; width: 30px;float: left;"></i>
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </nav>
+          </div>
+          <div class="col">
+            <div class="container-fluid">
+              <ul class="nav nav-tabs">
+                <li class="nav-link">
+                  <a class="nav-link" href="krrs.html" style="font-weight: bold; color: black;">Tahap 1 <br>(Masuk)</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link active" href="krrs-pengisian.html" style="font-weight: bold; color: black;">Tahap 2 <br>(Pengisian)</a>
+                </li>
+                <li class="nav-link">
+                  <a class="nav-link" href="krrs-selesai.html" style="font-weight: bold; color: black;">Tahap 3 <br>(Selesai)</a>
+                </li>
+              </ul>
+              <div class="form" style="margin-left: 7px; margin-top: 7px;">
+                <div>
+                    <form>
+                        <h2 style="text-align: center;font-size: 13pt; font-weight: 900;margin-top: 10px; margin-left:10px;" >
+                            KRRS Online Semester Reguler Fakultas Teknologi Informasi
+                        </h2>
+                        <table class="krrs" style="margin-left:10px;">
+                            <tr>
+                                <td >NIM </td>
+                                <td>: 535200014</td>
+                                <td>SKS Kumulatif</td>
+                                <td>: 42</td>
+                              </tr>
+                              <tr>
+                                <td>Nama</td>
+                                <td>: Jennie Kim</td>
+                                <td>IPK </td>
+                                <td>: 37.9</td>
+                              </tr>
+                              <tr>
+                                <td>Beban</td>
+                                <td>: 24</td>
+                                <td>Tahun ajaran</td>
+                                <td>: 2020/2021</td>
+                              </tr>
+                              <tr>
+                                <td>IPS Terakhir </td>
+                                <td>: 3,69</td>
+                                <td>Registrasi terakhir</td>
+                                <td>: 1 Juni 2020</td>
+                              </tr>
+                        </table>
+                  </form>
+                  </div>
+              </div>  
+              <div class="form" style="height:23%;margin-left: 7px; margin-top: 7px;">
+                <div>
+                    <form>
+                        <h3 class="p-krrs" style="text-align: Left ;font-size: 13pt; font-weight: 900; margin-top: 15px;">
+                            Pilih Matakuliah
+                        </h3>
+                        <select style="width:95%; height:60px; border-radius: 5px; color:gray ;margin-left: 10px;">
+                            <option value="" disabled selected hidden style="color: gray;">  --- Pilih Matakuliah---</option>
+                            <option value="Web programming">Web Programming</option>
+                            <option value="Computer System">Computer System</option>
+                          </select>
+                          <h3 class="p-krrs" style="text-align: Left ;font-size: 13pt; font-weight: 900; margin-top: 10px;">
+                            Pilih Kelas
+                        </h3>
+                        <select style="width:95%; height:60px; border-radius: 5px; color:gray ;margin-left: 10px;">
+                            <option value="" disabled selected hidden style="color: gray;">  --- Pilih Jadwal dan Kelas---</option>
+                            <option value="KELAS A/SENIN">Kelas A / Senin, 07:30 s.d 09:10</option>
+                            <option value="KELAS B/SELASA">Kelas B / Selasa, 07:30 s.d 11:10</option>
+                          </select>
+                          <a href="krrs-pengisian.html" class="btn" style="background-color: #A01627; color: white; width: 150px;height: 50px; 
+                    border-radius: 30px; margin-left: 35%; font-weight: bold;margin-top:2%;font-size: 15pt;">Simpan</a>
+                  </form>
+                  </div>
+              </div>  
+              <div class="form-krrs" style="margin-left: 5px; margin-top: 20px;">
+                <div style="width:100% ; height:15px;background-color:black; border-radius: 3px;"></div>
+                <div>
+                    <form >
+                        <table class="krrs" style="text-align:center;margin-top: 20px;">
+                            <tr>
+                                <th>Kode</th>
+                                <th>Matkul</th>
+                                <th>SKS</th>
+                                <th>Kelas</th>
+                                <th>Ruang</th>
+                                <th>Waktu kuliah</th>
+                                <th>Action</th>
+                              </tr>
+                              <tr style="background-color:CCCCCC;">
+                                <td>TK23015</td>
+                                <td>WEB PROGRAMMING</td>
+                                <td>8</td>
+                                <td>A</td>
+                                <td>
+                                    <p>Ruang Lab Prog. 5</p>
+                                    <p>Ruang R.703</p>
+                                </td>
+                                <td>
+                                    <p>Senin, 07:30 s.d 09:10</p>
+                                    <p>Senin, 09:30 s.d 11:10</p>
+                                    <p>Selasa, 07:30 s.d 11:10</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="##" class="btn" style="background-color: 29CA43; color: white; width: 100px;height: 30px; 
+                                        border-radius: 10px;  font-weight: bold;">Edit</a>
+                                    </p>
+                                    <p>
+                                        <a href="##" class="btn" style="background-color: #A01627; color: white; width: 100px;height: 30px; 
+                                        border-radius: 10px;  font-weight: bold;">Hapus</a>
+                                    </p>
+                                </td>
+
+                              </tr>
+                              <tr>
+                                <td>TK23016</td>
+                                <td>COMPUTER SYSTEMS</td>
+                                <td style="border-radius:100%;">6</td>
+                                <td style="border-radius:100%;">B</td>
+                                <td>
+                                    <p>Ruang R.803</p>
+                                    <p>Ruang R.803</p>
+                                </td>
+                                <td>
+                                    <p>Selasa, 07:30 s.d 09:10</p>
+                                    <p>Selasa, 09:30 s.d 11:10</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="##" class="btn" style="background-color: 29CA43; color: white; width: 100px;height: 30px; 
+                                        border-radius: 10px;  font-weight: bold;">Edit</a>
+                                    </p>
+                                    <p>
+                                        <a href="##" class="btn" style="background-color: #A01627; color: white; width: 100px;height: 30px; 
+                                        border-radius: 10px;  font-weight: bold;">Hapus</a>
+                                    </p>
+                                </td>
+
+                              </tr>
+                              <tr style="background-color:CCCCCC;">
+                                <td>TK23017</td>
+                                <td>INTRODUCTION TO OPERATING SYSTEMS</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>
+                                    <p>Ruang R.705</p>
+                                    <p>Ruang R.705</p>
+                                </td>
+                                <td>
+                                    <p>Kamis, 07:30 s.d 09:10</p>
+                                    <p>Kamis, 09:30 s.d 11:10</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="##" class="btn" style="background-color: 29CA43; color: white; width: 100px;height: 30px; 
+                                        border-radius: 10px;  font-weight: bold;">Edit</a>
+                                    </p>
+                                    <p>
+                                        <a href="##" class="btn" style="background-color: #A01627; color: white; width: 100px;height: 30px; 
+                                        border-radius: 10px;  font-weight: bold;">Hapus</a>
+                                    </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>TK23018</td>
+                                <td>DISTRIBUTED SYSTEMS</td>
+                                <td style="border-radius:100%;">4</td>
+                                <td style="border-radius:100%;">A</td>
+                                <td>
+                                    <p>Ruang R.805</p>
+                                    <p>Ruang R.805</p>
+                                </td>
+                                <td>
+                                    <p>Rabu, 07:30 s.d 09:10</p>
+                                    <p>Rabu, 09:30 s.d 11:10</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="##" class="btn" style="background-color: 29CA43; color: white; width: 100px;height: 30px; 
+                                        border-radius: 10px;  font-weight: bold;">Edit</a>
+                                    </p>
+                                    <p>
+                                        <a href="##" class="btn" style="background-color: #A01627; color: white; width: 100px;height: 30px; 
+                                        border-radius: 10px;  font-weight: bold;">Hapus</a>
+                                    </p>
+                                </td>
+                              </tr>
+                              <tr style="font-size: 18pt; font-weight: 500;">
+                                <td></td>
+                                <td >Total SKS</td>
+                                <td style="background-color:black;border-radius:20px;color:white">22</td>
+                              </tr>
+                             
+                        </table>
+                  </form>
+                  </div>
+              </div>
+              <div class="container-fluid" style="font-weight: bold; margin-bottom: 20px; margin-top: 10px;">
+                <a href="krrs-pengisian.html" class="btn" style="background-color: #A01627; color: white; width: 200px;height: 40px; 
+                    border-radius: 30px; margin-left: 44%; font-weight: bold;">Continue & Finish</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  <footer style="background-color: #A01627; color: white; text-align: center; height: 30px;">
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    Copyright UNTAR 2021 All Rights Reserved  
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+      feather.replace()
+    </script>
+</body>
+</html>
+
