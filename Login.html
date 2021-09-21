@@ -5,7 +5,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pengisian KRRS Online</title>
-<link rel="stylesheet" href="Style1.css">
+<style>
+  .form{
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  width: 500px;
+  height:300px;
+  background:white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+</style>
+<link rel="stylesheet" href="Style.css">
   </head>
   <body>
     <div class="bg_image">
@@ -14,18 +26,23 @@
         <h1 style="margin-top: -60px; margin-left: 500px; font-size: 30pt; color:white;">Pengisian KRRS Online</h1>
       </div>
     </div>
-    <div class="center">
+    <div class="form">
       <div class="login-form"style="color:white;">
         <h2 style="margin-left: 15% ; padding-top: 2%;">UNIVERSITAS TARUMANAGARA</h2>
       </div>
       <div>
-      <form style="margin-top: 25px; margin-left: -5px;font-weight: bold; ">
+      <form style="margin-top:5%;margin-left:10%;font-weight: bold; ">
         <label>Username : </label>
-        <input type="text" name="username" placeholder="Masukkan username" >
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+        <input style="width:70%;"type="text" name="username" placeholder="Masukkan username" >
         <label>Password : </label>
-        <input type="password" name="password" placeholder="Masukkan password">
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+        <input style="width:70%;" type="password" name="password" placeholder="Masukkan password">
+        <br>
         <label>Level Akses :
-          <select style="width:80%; height:100%; margin-left: 100px;">
+        &nbsp&nbsp
+          <select style="width:70%; height:40px; border-radius: 5px; border-color: black;">
+            <option value="" disabled selected hidden style="color: gray;">  --- Pilih ---</option>
             <option value="Mahasiswa">Mahasiswa</option>
             <option value="Admin">Admin</option>
           </select>
@@ -34,7 +51,7 @@
       </div>
         <div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</div>
         <div class="forgotpass_link"></div>
-        <div class="pass">
+        <div class="pass" style="margin-top: 8%;margin-left: 2%;">
           <a href="Lupapassword.html" style=" color:black; text-decoration: none;">Lupa Password ?</a>
         </div>
         <div class="button-login" style="margin-top: -60px; margin-left:350px">
