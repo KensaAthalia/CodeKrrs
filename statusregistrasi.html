@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,">
-    <title>Mahasiswa - Status Registrasi</title>
+    <title>Mahasiswa - Home</title>
     <style>
       #content {
       min-height: calc(100vh - 30px);
@@ -19,37 +19,21 @@
       height: 30px; 
       float: left;
       }
-      #content .btn{
-        border: 1pt solid gray!important;
-        border-radius: 20px!important;
-        margin: 5px;
+      
+      .form-krrs{
+        border:1px solid black;
+        height :400px;
+        width : 95%;
+        margin-left: 10px; 
+        margin-top:7px;
+        border-color: black;
+        border-radius: 10px;
       }
-      .card{
-        width: 9rem;
-        height: 13rem;
-        border: 0!important;
-      }
-      .card-title{
-        font-size: 12pt;
-        font-weight: bold;
-      }
-      .nav-tabs{
-        border-bottom: 1pt solid black!important;
-        font-size: 14pt;
-      }
-     .form-statusregis{
-    border:1px solid black;
-    max-height: 100%;
-    width : 100%;
-    margin-left: 10px; 
-    margin-top:7px;
-    border-color: black;
-    border-radius: 10px;
-    float: left;
-  }
+    
 
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
@@ -62,9 +46,9 @@
         <p style="font-weight: bold;font-size: xx-large;">KRRS ONLINE MAHASISWA</p> 
       </div>
       <div class="col-2">
-        <a href="#" type="button" class="btn" style="background-color: white; color: #A01627; width: 120px; float: right; border-radius: 30px; margin: 10%;">
+        <a href="#" type="button" class="btn" style="background-color: white; color: #A01627; width: 130px; float: right; border-radius: 30px; margin: 10%;">
           <img src="asset/logout.png" alt="exit" style="float: left; width: 25px; padding: 0;">  
-          <div style="font-weight: bold; float: left; margin-left: 6px;">Logout</div> 
+          <div style="font-weight: bold; float: left; margin-left: 5px;">Logout</div> 
         </a>
       </div>
     </div>
@@ -75,125 +59,105 @@
           <div class="col-2 pl-4" style="background-color: #A01627; min-height: 100vh;">
               <div class="container-auto" style="margin-top: 10px;">
                   <img src="asset/jennie.png" alt="jennie"
-                    style="width: 95px; height: 95px; border-radius: 50%; margin-left: 30%; margin-top: 5%;">
+                    style="width: 70px; height: 70px; border-radius: 50%; margin-left: 30%; margin-top: 5%;">
                     <div style="text-align: center; color: white;">
                       <p>
-                        Nama Lengkap
+                        Jennie
                         <br>
                         Mahasiswa-NIM
                       </p>
                     </div>
                 </div>
-                <nav class="nav flex-column ml-2">
-                  <li class="nav-item">
-                    <img src="asset/HOME WHITE.png" alt="profil" class="nav_img">
-                    <a class="nav-link active" href="home.html"> Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <img src="asset/PROFIL.png" alt="profil" class="nav_img">
-                    <a class="nav-link" href="profil.html">Profil</a>
-                  </li>
-                  <li class="nav-item">
-                    <p style="font-size: 6pt;font-weight: bold; float: left; color: white; margin-top: 15px;">LINTAR</p>
-                    <a class="nav-link" href="https://lintar.untar.ac.id/">Lintar Mahasiswa</a>
-                  </li>
-                  <li class="nav-item">
-                    <img src="asset/STATUS REGISTRASI.png" alt="status" class="nav_img">
-                    <a class="nav-link" href="#">Status Registrasi</a>
-                  </li>
-                  <li class="nav-item">
-                    <img src="asset/PANDUAN KRRS.png" alt="panduan" class="nav_img">
-                    <a class="nav-link" href="#">Panduan KRRS</a>
-                  </li>
-                  <li class="nav-item">
-                    <img src="asset/KRRS REGULER.png" alt="krrs" class="nav_img">
-                    <a class="nav-link" href="krrs.html">KRRS Reguler</a>
-                  </li>
-                  <li class="nav-item">
-                    <img src="asset/PRINT KRRS.png" alt="cetak" class="nav_img">
-                    <a class="nav-link" href="#">Cetak KRRS</a>
-                  </li>
-                  <li class="nav-item">
-                    <i data-feather="phone" style="color: white; width: 30px;float: left;"></i>
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <img src="asset/EXIT WHITE.png" alt="exit" class="nav_img">
-                    <a class="nav-link" href="#">Logout</a>
-                  </li>
-                </nav>
+              <nav class="nav flex-column ml-2">
+                <li class="nav-item">
+                  <img src="asset/HOME WHITE.png" alt="profil" class="nav_img">
+                  <a class="nav-link active" href="home.html"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/PROFIL.png" alt="profil" class="nav_img">
+                  <a class="nav-link" href="profil.html">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <p style="font-size: 6pt;font-weight: bold; float: left; color: white; margin-top: 15px;">LINTAR</p>
+                  <a class="nav-link" href="https://lintar.untar.ac.id/">Lintar Mahasiswa</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/STATUS REGISTRASI.png" alt="status" class="nav_img">
+                  <a class="nav-link" href="#">Status Registrasi</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/PANDUAN KRRS.png" alt="panduan" class="nav_img">
+                  <a class="nav-link" href="#">Panduan KRRS</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/KRRS REGULER.png" alt="krrs" class="nav_img">
+                  <a class="nav-link" href="#">KRRS Reguler</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/PRINT KRRS.png" alt="cetak" class="nav_img">
+                  <a class="nav-link" href="#">Cetak KRRS</a>
+                </li>
+                <li class="nav-item">
+                  <i data-feather="phone" style="color: white; width: 30px;float: left;"></i>
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <img src="asset/EXIT WHITE.png" alt="exit" class="nav_img">
+                  <a class="nav-link" href="#">Logout</a>
+                </li> 
+              </nav>
           </div>
-              
           <div class="col">
             <div class="container-fluid">
-                <ul class="nav nav-tabs" style="font-size: 12pt;">
+              <ul class="nav nav-tabs">
                 <li class="nav-items">
-                <a class="nav-link active" href="#"style="font-weight: bold;text-decoration: underline;">STATUS REGISTRASI</a>
+                  <a class="nav-link" href="Historychat.html" style="font-weight: bold; color:black;border-color: black; margin-top: 5px; margin-bottom: 5px;">STATUS REGISTRASI</a>
                 </li>
-
               </ul>
-              <div style="font-weight: 900; margin-left: 10px;font-size: 20pt; margin-top: 10px; width:50%;">STATUS REGISTRASI
-                
+              <div style="text-align: left;color: #000000;font-size:15pt;margin-left:5px;margin-top: 10px;font-weight: 900;">
+                  Syarat Registrasi
                 </div>
-                </div>
-                  <div class="form-statusregis" style="margin-left: 5px; margin-top: 10px;">
-                <div style="width:100% ; height:15px;background-color:black; border-radius: 3px;"></div>
+            </div>
+              <div class="form-krrs" style="margin-left: 20px; margin-top: 20px;">
+                <div style="width:100% ; height:15px;background-color:black; border-top-left-radius: 5px;border-top-right-radius: 5px;"></div>
                 <div>
+                  <form >
+                      <table class="krrs" style="text-align:center;margin-top: 40px;margin-left: 10px;width:98%;">
+                          <tr style="border-bottom:2px solid black;">
+                              <th>NO</th>
+                              <th>SYARAT REGISTRASI</th>
+                              <th>STATUS</th>
+                            </tr>
+                            <tr style="background-color:CCCCCC;height:50;width:50;border-bottom:1px solid black;">
+                              <td>1</td>
+                              <td>PEMBAYARAN UANG KULIAH</td>
+                              <td><span class="badge badge-primary" style="background-color: 29CA43;font-size: 15pt;color: white;width:50%;border-radius: 30px;">OK</span></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid black;">
+                              <td>2</td>
+                              <td>IPK >= 2</td>
+                              <td><span class="badge badge-primary" style="background-color: 29CA43;font-size: 15pt;color: white;width:50%;border-radius: 30px;">OK</span></td>
+                            </tr>
+                            <tr style="background-color:CCCCCC;border-bottom:1px solid black;">
+                              <td>3</td>
+                              <td>TABUNGAN SKS</td>
+                              <td><span class="badge badge-primary" style="background-color: 29CA43;font-size: 15pt;color: white;width:50%;border-radius: 30px;">OK</span></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid black;">
+                              <td>4</td>
+                              <td>UANG KULIAH</td>
+                              <td><span class="badge badge-primary" style="background-color: #A01627;font-size: 15pt;color: white;width:50%;border-radius: 30px;">OK</span></td>
+                            </tr>
+                            
+                      </table>
                 </form>
-                <table class="statusregis" style="text-align:center;margin-top: 20px;padding: auto;">
-                    <tr>
-                      <th scope="col" style="text-align: center;width:1%">NO</th>
-                      <th scope="col" style="text-align: center;width:22%">SYARAT REGISTRASI</th>
-                      <th scope="col" style="text-align: center;width:10%">STATUS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                  <tr style="background-color:CCCCCC;">
-                    <th scope="row">1</th>
-                    <td>PEMBAYARAN UANG KULIAH</td>
-                    <td> 
-                        <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Yes</button>
-                    </td>
-  
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>IPK >= 2</td>
-                    <td> 
-                        <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Yes</button>
-                    </td>
-  
-                  </tr>
-                  <tr style="background-color:CCCCCC;">
-                    <th scope="row">3</th>
-                    <td>TABUNGAN SKS</td>
-                    <td> 
-                        <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Yes</button>
-                    </td>
-  
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>AKTIF KULIAH</td>
-                    <td> 
-                        <button type="button" class="btn btn-danger" style="border-radius: 20pt; width: 60pt;">No</button>
-                    </td>
-  
-                  
-                </tbody>
-              </table>
-              <div>
-                <a href="krrs.html" class="btn" style="background-color: #A01627; color: white; width: 200px;height: 50px; 
-              border-radius: 100px;margin-left:40%; margin-top: 10px; font-weight: bold; font-size: 16pt;">MENUJU KRRS</a>
-            </div>
-            </form>
-
-
-
-            </div>
+                </div>
+                <div class="container-fluid" style="font-weight: bold; margin-bottom: 20px; margin-top: 25px;">
+                  <a href="krrs-pengisian.html" class="btn" style="background-color: #A01627; color: white; width: 220px;height: 40px; 
+                      border-radius: 30px; margin-left: 40%; font-weight: bold; font-size: 15pt;">Menuju KRRS</a>
+                </div>
               </div>
-            </div>
-            </div>
+              
           </div>
         </div>
   </div>
@@ -209,3 +173,4 @@
       feather.replace()
     </script>
 </body>
+</html>
