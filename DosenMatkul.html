@@ -58,16 +58,6 @@
     float: left;
   }
   
-  .form-control{
-    border:1px solid black;
-    max-height: 100%;
-    width : 200%;
-    margin-left:-10px; 
-    margin-top:7px;
-    border-color: black;
-    border-radius: 10px;
-    float: left;
-  }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -165,13 +155,17 @@
               </table>
             </div>
           </div>
-          <div class="mb-3">
-            <label for="NIP" class="form-label"style="font-size: 12pt;font-weight: 900;">NIP</label>
-            <input type="NIP" class="form-control" id="NIP" style="margin-top:-9pt;"></div>
+       &nbsp &nbsp &nbsp &nbsp
+          <fieldset disabled>
             <div class="mb-3">
-            <label for="  Nama" class="form-label"style="font-size: 12pt;font-weight: 900;">Nama</label>
-            <input type="Nama" class="form-control" id="Nama" style="margin-top: -8pt;">
-          </div>		
+              <label for="NIP" class="form-label">NIP</label>
+              <input type="text" id="disabledNIPInput" class="form-control" placeholder=""style="border-color:#000000;border-radius 3px">
+            </div>
+            <div class="mb-3">
+              <label for="NAMA" class="form-label"style="text-align:left">NAMA</label>
+              <input type="text" id="disabledNamaInput" class="form-control" placeholder=""style="border-color:#000000;border-radius 3px">
+            </div>
+          </fieldset>		
            </form>
             </div>
               <div style="font-weight: 900; margin-left: 4px;font-size: 12pt; margin-top: 10px; width:50%;margin-bottom: 8%;">Mata Kuliah
