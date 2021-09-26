@@ -39,21 +39,15 @@
       }
       .form-datakhsedit{
     border:1px solid black;
-    max-height: 600px;
+    max-height: 100%;
     width : 100%;
     margin-left: 10px; 
     margin-top:7px;
     border-color: black;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     float: left;
   }
-        .form-datakhsedit th,td,tr {
-        padding:4px;
-      }
-
-      tr,td{
-        font-weight: 600;
-      }
 
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -146,10 +140,11 @@
                     </div>
                 </div>
                 <div class="form-datakhsedit" style="margin-left: 5px; margin-top: 10px;">
-                    <div style="width:100% ; height:15px;background-color:black; border-radius: 3px;"></div>
+                    <div style="width:100.1% ; height:15px;background-color:black; border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;"></div>
                     <div>
                     </form>
-                    <table class="datakhsedit" style="text-align:center;margin-top: 20px;padding: auto;">
+                    <table class="datakhsedit" style="text-align:center;margin: 20px;padding: auto;">
                         <tr style="border-bottom:1px solid black;">
                           <th scope="col" style="text-align: center;width:3%">NO</th>
                           <th scope="col" style="text-align: center;width:3%">NIM</th>
@@ -205,15 +200,15 @@
               <h6 style="text-align: left;color: #000000; font-weight: bold;padding-left:10px;">Showing 1 to 4 of 4 entries</h6>
               <nav aria-label="Page navigation krs">
                   <div style="padding-right: 1%;">
-                <ul class="pagination justify-content-end">
-                  <li class="page-item disabled">
-                    <a class="page-link" style="color: black;font-weight: 700;" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" style="background-color:A01627;color:white;"href="#">1</a></li>
-                  <li class="page-item">
-                   <a class="page-link" style="color: black;font-weight: 700;" href="#">Next</a>
-                  </li>
-                </ul>
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link" style="color:black;" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" style="background-color: #A01627;color:white;"href="#">1</a></li>
+                      <li class="page-item">
+                        <a class="page-link" style="color:black;" href="#">Next</a>
+                      </li>
+                    </ul>
               </nav>
              
             </form>
@@ -239,4 +234,3 @@
       feather.replace()
     </script>
 </body>
-</html>
