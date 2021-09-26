@@ -23,7 +23,7 @@
       .nav-tabs{
         border-bottom: 1pt solid black!important;
         font-size: 14pt;
-        margin-top: 5px;
+        margin-top: 1pt;
       }
 
       table {
@@ -31,7 +31,26 @@
         width: 100%;
         }
 
-        tr:nth-child(odd) {background-color: #f2f2f2;}
+        .nav-bawah{
+        background:black;
+        height: 3px;
+      }
+
+      .form-krrs{
+        border:1px solid black;
+        height :300px;
+        width : 99%;
+        margin-left: 10px; 
+        margin-top:7px;
+        border-color: black;
+        border-radius: 10px;
+      }
+
+      .button-lihatjawaban{
+        background-color: #27378B;
+        color: white;
+        text-align: center;
+      }
 
 
     </style>
@@ -48,7 +67,7 @@
         <p style="font-weight: bold;font-size: xx-large; margin-top: 10pt;">KRRS ONLINE MAHASISWA</p> 
       </div>
       <div class="col-2">
-        <a href="Index.html" type="button" class="btn" style="background-color: white; color: #A01627; width: 120px; float: right; border-radius: 30px; margin: 10%;">
+        <a href="Index.html" id="logout" type="button" class="btn" style="background-color: white; color: #A01627; width: 120px; float: right; border-radius: 30px; margin: 10%;">
           <img src="asset/logout.png" alt="exit" style="float: left; width: 25px; padding: 0;">  
           <div style="font-weight: bold; float: left; margin-left: 5px;">Logout</div> 
         </a>
@@ -110,6 +129,7 @@
           </nav>
       </div>
           <div class="col">
+
             <div class="container-fluid">
               <ul class="nav nav-tabs">
                 <li class="nav-items">
@@ -117,54 +137,55 @@
                 </li>
                 <li class="nav-items">
                   <a class="nav-link active" href="historychat.html" style="font-weight: 800; color:black; letter-spacing: 3pt; font-size: 8pt;">HISTORY CHAT</a>
+                  <div class="nav-bawah"></div>
                 </li>
               </ul>
 
-               <div style="padding: 30pt;"></div>
+              <div class="form-krrs" style="margin-left: 5px; margin-top: 22px;">
+                <div style="width:100% ; height:15px;background-color:black; border-top-left-radius: 5px;border-top-right-radius: 5px;"></div>
+                <div>
+                    <form >
+                      <table class="krrs" style="text-align:center;margin-top: 40px;margin-left: 10px;width:98%;">
+                        <tr style="border-bottom:2px solid black; height:30;width:30;" >
+                          <th style= "letter-spacing:3pt; font-size: 10pt; font-weight: 900;">WAKTU</th>
+                          <th style="letter-spacing:3pt; font-size: 10pt; font-weight: 900;">TANGGAL</th>
+                          <th style= "letter-spacing:3pt; font-size: 10pt; font-weight: 900; margin-right: 10pt;">PERTANYAAN</th>
+                          <th style= "letter-spacing:3pt; font-size: 10pt; font-weight: 900;">STATUS</th>
+                        </tr>
+                        <tr style="background-color:CCCCCC;height:40;width:40;border-bottom:1px solid black;">
+                        <td>09.29</td>
+                        <td>19/07/21</td>
+                        <td>Selamat pagi Admin, saya ingin bertanya, untuk FTI jam mengisi KRRS nya itu jam berapa yaa, Min? Terima kasih.</td>
+                        <td>
+                          <div style="margin: 5pt;"></div>
+                          <span class="badge badge-primary" style="background-color: 29CA43;font-size: 13pt;color: white; width:150pt; border-radius: 30px;margin-right: 10pt;">Sudah terjawab</span>
+                          <br>
+                          <div style="margin: 5pt;"></div>
+
+                          <button class="button-lihatjawaban" style="border-radius: 20pt; width: 150pt; margin-right: 10pt; font-size: 12pt; height:20pt;font-weight: 800; ;">Lihat Jawaban</button>
+                          <div style="margin: 5pt;"></div>
+                          </td>
+                      </tr>
+                      <tr style="border-bottom:1px solid black; height:40;width:40;">
+                        <td>19.23</td>
+                        <td>20/07/21</td>
+                        <td>Selamat malam Admin, saya ingin bertanya,  untuk FTI angkatan 20, apakah bisa mengambil mata kuliah yang lain?</td>
+                        <td><span class="badge badge-primary" style="background-color: A01627;font-size: 13pt;color: white;width:150pt;border-radius: 30px;margin-right: 10pt;">Belum Terjawab</span></td>
+
+                      </tr>
+
+                          
+                        
+                             
+                        </table>
+                  </form>
+                  </div>
+              </div>
+
+              
 
               </ul>
-              <div style="overflow-x:auto">
-              <table class="table table striped table-bordered">
               
-                  <thead class="thead-dark"> 
-                      
-                    <tr>
-                    <th scope="col" style="text-align: center;">Waktu</th>
-                    <th scope="col" style="text-align: center;">Tanggal</th>
-                    <th scope="col" style="text-align: center;">Pertanyaan</th>
-                    <th scope="col" style="text-align: center;">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>09.29</td>
-                    <td>19/07/21</td>
-                    <td>Selamat pagi Admin, saya ingin bertanya,  untuk FTI
-                      jam mengisi KRRS nya itu jam berapa yaa, Min?
-                      Terima kasih.</td>
-                    <td>
-                      <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 150pt;">Sudah Terjawab</button>
-                      <br> 
-                      <button type="button" class="btn btn-primary" style="border-radius: 20pt; width: 150pt; margin-top: 3pt;">Lihat Jawaban </button>
-                  
-                </td>
-
-                  </tr>
-                  <tr>
-                    <td>19.23</td>
-                    <td>20/07/21</td>
-                    <td>Selamat malam Admin, saya ingin bertanya,  untuk FTI
-                      angkatan 20, apakah bisa mengambil mata kuliah yang 
-                      lain?</td>
-                    <td>
-                      <button type="button" class="btn btn-danger" style="border-radius: 20pt; width: 150pt;">Belum Terjawab</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-              </div>
-            </div>
             </div>
           </div>
         </div>
@@ -179,6 +200,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script>
       feather.replace()
+      $('#logout').click((e)=>{
+        title: 'Logout Confirmation';
+        if (confirm("Anda ingin logout?")) {
+          $('#logout').attr('href','Index.html');
+        } else {
+          $('#logout').attr('href','#');
+        }
+        });
     </script>
 </body>
 </html>
