@@ -39,15 +39,28 @@
       }
      .form-pertanyaanmahasiswa{
     border:1px solid black;
-    max-height: 120%;
-    width : 100%;
+    height: 400px;
+    width : 98%;
     margin-left: 10px; 
     margin-top:7px;
     border-color: black;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     float: left;
   }
 
+  .nav-bawah{
+        background:black;
+        height: 3px;
+      }
+       
+      td{
+        font-weight: 600;
+      }
+
+      th{
+        font-weight: 700;
+      }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -108,18 +121,19 @@
             <div class="container-fluid">
                 <ul class="nav nav-tabs" style="font-size: 12pt;">
                 <li class="nav-items">
-                <a class="nav-link active" href="#"style="font-weight: bold;text-decoration: underline;">PERTANYAAN MAHASISWA</a>
-                </li>
+                <a class="nav-link active" href="#"style="font-weight: bold;">PERTANYAAN MAHASISWA</a>
+                  <div class="nav-bawah"></div>
+              </li>
 
               </ul>
                  
                 </div>
-                  <div class="form-pertanyaanmahasiswa" style="margin-left: 5px; margin-top: 10px;">
-                <div style="width:100% ; height:15px;background-color:black; border-radius: 3px;"></div>
+                  <div class="form-pertanyaanmahasiswa" style="margin-left: 5px; margin-top: 20px;">
+                <div style="width:100.1% ; height:15px;background-color:black; border-top-left-radius: 10px;border-top-right-radius: 10px;"></div>
                 <div>
                 <form>
-                <table class="pertanyaanmahasiswa" style="text-align:center;margin-top: 20px;padding: auto;">
-                    <tr style="border-bottom:1px solid black;">
+                <table style="text-align:center;margin-top: 20px;padding: auto;margin: 10px;">
+                    <tr style="border-bottom:2px solid black;letter-spacing: 3pt;">
                       <th scope="col" style="text-align: center;width:3%">WAKTU</th>
                       <th scope="col" style="text-align: center;width:3%">TANGGAL</th>
                       <th scope="col" style="text-align: center;width:10%">NAMA</th>
