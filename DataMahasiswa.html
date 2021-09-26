@@ -70,7 +70,7 @@
         <p style="font-weight: bold;font-size: xx-large;">KRRS ONLINE MAHASISWA</p> 
       </div>
       <div class="col-2">
-        <a href="#" type="button" class="btn" style="background-color: white; color: #A01627; width: 120px; float: right; border-radius: 30px; margin: 10%;">
+        <a href="Index.html" id="logout" type="button" class="btn" style="background-color: white; color: #A01627; width: 120px; float: right; border-radius: 30px; margin: 10%;">
           <img src="asset/logout.png" alt="exit" style="float: left; width: 25px; padding: 0;">  
           <div style="font-weight: bold; float: left; margin-left: 6px;">Logout</div> 
         </a>
@@ -95,11 +95,11 @@
               <nav class="nav flex-column ml-2">
                 <li class="nav-item">
                   <img src="asset/HOME WHITE.png" alt="home" class="nav_img">
-                  <a class="nav-link active" href="home.html"> Home</a>
+                  <a class="nav-link" href="AdminHome.html"> Home</a>
                 </li>
                 <li class="nav-item">
                   <img src="asset/ManajemenPutih.png" alt="home" class="nav_img">
-                  <a class="nav-link" href="Manajemendata.html">Manajemen Data</a>
+                  <a class="nav-link active" href="DataMatkul.html">Manajemen Data</a>
                 </li>
                 <li class="nav-item">
                   <img src="asset/KRRS REGULER.png" alt="krrs" class="nav_img">
@@ -121,7 +121,7 @@
                 <li class="nav-items">
                   <a class="nav-link" href="DataDosen.html" style="font-weight: bold; color:black;">DATA DOSEN</a>
                 </li>
-                <a class="nav-link active" href="#"style="font-weight: bold;text-decoration: underline;">DATA MAHASISWA</a>
+                <a class="nav-link active" href="DataMahasiswa.html"style="font-weight: bold;text-decoration: underline;">DATA MAHASISWA</a>
                 <li class="nav-items">
                 </li>
                 <li class="nav-items">
@@ -134,7 +134,7 @@
               </ul>
               <div style="font-weight: 900; margin-left: 10px;font-size: 20pt; margin-top: 10px; width:50%;"> Data Mahasiswa
                 <div>
-                    <a href="Manajemendata.html" class="btn" style="background-color: #A01627; color: white; width: 150px;height: 50px; 
+                    <a href="datamahasiswatambah.html" class="btn" style="background-color: #A01627; color: white; width: 150px;height: 50px; 
                   border-radius: 100px; margin-top: 10px; font-weight: bold; font-size: 18pt;padding-left:3px;">+Tambah</a>
                 </div>
                 </div>
@@ -171,7 +171,7 @@
                     <td>DAMEETHIA ANGELINE</td>
                     <td>TEKNIK INFORMATIKA</td>
                     <td> 
-                        <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Edit</button>
+                        <a href="datamahasiswaedit.html" type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Edit</a>
                         &nbsp 
                         <button type="button" class="btn btn-danger" style="border-radius: 20pt; width: 60pt; margin-top: 3pt;">Hapus </button>
                         &nbsp 
@@ -184,7 +184,7 @@
                     <td>VENNY CYNTIA</td>
                     <td>TEKNIK INFORMATIKA</td>
                     <td> 
-                        <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Edit</button>
+                      <a href="datamahasiswaedit.html" type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Edit</a>
                         &nbsp 
                         <button type="button" class="btn btn-danger" style="border-radius: 20pt; width: 60pt; margin-top: 3pt;">Hapus </button>
   
@@ -195,7 +195,7 @@
                     <td>KENSA ATHALIA</td>
                     <td>TEKNIK INFORMATIKA</td>
                     <td> 
-                        <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Edit</button>
+                      <a href="datamahasiswaedit.html" type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Edit</a>
                         &nbsp 
                         <button type="button" class="btn btn-danger" style="border-radius: 20pt; width: 60pt; margin-top: 3pt;">Hapus </button>
                     </td>
@@ -207,7 +207,7 @@
                     <td>JAMES SUGIARTO EFFENDY</td>
                     <td>TEKNIK INFORMATIKA</td>
                     <td> 
-                        <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Edit</button>
+                      <a href="datamahasiswaedit.html" type="button" class="btn btn-success" style="border-radius: 20pt; width: 60pt;">Edit</a>
                         &nbsp 
                         <button type="button" class="btn btn-danger" style="border-radius: 20pt; width: 60pt; margin-top: 3pt;">Hapus </button>
                     </td>
@@ -251,5 +251,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script>
       feather.replace()
+      $('#logout').click((e)=>{
+        title: 'Logout Confirmation';
+        if (confirm("Anda ingin logout?")) {
+          $('#logout').attr('href','Index.html');
+        } else {
+          $('#logout').attr('href','#');
+        }
+        });
     </script>
 </body>
+</html>
