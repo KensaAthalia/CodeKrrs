@@ -39,7 +39,7 @@
       }
       .form-datakhsinput{
     border:1px solid black;
-    max-height: 100%;
+    max-height: 600px;
     width : 100%;
     margin-left: 10px; 
     margin-top:7px;
@@ -49,7 +49,7 @@
   }
   .form-datakhsinputfix{
     border:1px solid black;
-    max-height: 100%;
+    max-height: 600px;
     width : 100%;
     margin-left: 10px; 
     margin-top:7px;
@@ -57,6 +57,16 @@
     border-radius: 10px;
     float: left;
   }
+ .form-datakhsinput th,td,tr {
+        padding:4px;
+      }
+      .form-datakhsinputfix th,td,tr {
+        padding:7px;
+      }
+
+      tr,td{
+        font-weight: 600;
+      }
 
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -141,11 +151,11 @@
               <div style="font-weight: 900; margin-left: 10px;font-size: 20pt; margin-top: 10px; width:50%;">INPUT KHS
                 </div>
                
-                <div class="form-datakhsinput" style="margin-left: 5px; margin-top: 10px;">
+                <div class="form-datakhsinput" style="margin-left: 5px; margin-top: 5px;padding-top:2;">
                     <div style="width:100% ; height:15px;background-color:black; border-radius: 3px;"></div>
                     <div>
                     </form>
-                    <table class="datakhsinput" style="text-align:center;margin-top: 20px;padding: auto;">
+                    <table style="text-align:center;margin-top: 20px;padding: auto;">
                         <tr style="border-bottom:1px solid black;">
                           <th scope="col" style="text-align: center;width:3%">NO</th>
                           <th scope="col" style="text-align: center;width:20%">MATA KULIAH</th>
@@ -159,7 +169,7 @@
                       <tr style="background-color:CCCCCC;border-bottom:1px solid black">
                         <th scope="row">1</th>
                         <td>WEB PROGRAMMING</td>
-                        <td> <div class="badge badge-danger" style="border-radius: 30px; width: 35%;height:40%;font-size:12pt;color: white;">8</div></td>
+                        <td> <div class="badge badge-danger" style="border-radius: 30px;padding-top: 7px ;width: 40%;height:35px;font-size:12pt;color: white;">8</div></td>
                         <td><input type="Nilaihuruf" id="nilaihuruf"></td>
                         <td><input type="Nilaiangka" id="nilaiangka"></td>
                         <td><input type="Bobotkualitas" id="Bobotkualitas"></td>
@@ -169,7 +179,7 @@
                       <tr style="border-bottom:1px solid black;">
                         <th scope="row">2</th>
                         <td>COMPUTER SYSTEMS</td>
-                        <td> <div class="badge badge-primary" style="border-radius: 30px; width: 35%;height:40%;font-size:12pt;color: white;">6</div></td>
+                        <td> <div class="badge badge-primary" style="border-radius: 30px;padding-top: 7px ;width: 40%;height:35px;font-size:12pt;color: white;">6</div></td>
                         <td><input type="Nilaihuruf" id="nilaihuruf"></td>
                         <td><input type="Nilaiangka" id="nilaiangka"></td>
                         <td><input type="Bobotkualitas" id="Bobotkualitas"></td> 
@@ -178,7 +188,7 @@
                       <tr style="background-color:CCCCCC;border-bottom:1px solid black">
                         <th scope="row">3</th>
                         <td>INTRODUCTION TO OPERATING SYSTEMS</td>
-                        <td> <div class="badge badge-success" style="border-radius: 30px; width: 35%;height:40%;font-size:12pt;color: white;">4</div></td>
+                        <td> <div class="badge badge-success" style="border-radius: 30px;padding-top: 7px;width: 40%;height:35px;font-size:12pt;color: white;">4</div></td>
                         <td><input type="Nilaihuruf" id="nilaihuruf"></td>
                         <td><input type="Nilaiangka" id="nilaiangka"></td>
                         <td><input type="Bobotkualitas" id="Bobotkualitas"></td>
@@ -187,7 +197,7 @@
                       <tr style="border-bottom:1px solid black;">
                         <th scope="row">4</th>
                         <td>DISTRIBUTED SYSTEMS</td>
-                        <td> <div class="badge badge-success" style="border-radius: 30px; width: 35%;height:40%;font-size:12pt;color: white;">4</div></td>
+                        <td> <div class="badge badge-success" style="border-radius: 30px;padding-top: 7px ;width: 40%;height:35px;font-size:12pt;color: white;">4</div></td>
                         <td><input type="Nilaihuruf" id="nilaihuruf"></td>
                         <td><input type="Nilaiangka" id="nilaiangka"></td>
                         <td><input type="Bobotkualitas" id="Bobotkualitas"></td>
@@ -197,20 +207,20 @@
                     </tbody>
                   </table>
                   <div>
-                    <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 70pt;margin-left: 38%;">Save</button>
-                    <button type="button" class="btn btn-danger" style="border-radius: 20pt; width: 70pt;">Batal</button>
-                    <button type="button" class="btn btn-primary" style="border-radius: 20pt; width: 70pt;">Tutup</button>
+                    <button type="button" class="btn btn-success" style="border-radius: 20pt; width: 70pt;margin-left: 38%;margin-top: 10px;margin-bottom: 8px;">Save</button>
+                    <button type="button" class="btn btn-danger" style="border-radius: 20pt; width: 70pt;margin-top: 10px;margin-bottom: 8px;">Batal</button>
+                    <button type="button" class="btn btn-primary" style="border-radius: 20pt; width: 70pt;margin-top: 10px;margin-bottom: 8px;">Tutup</button>
                 </div>
             </form>
         </div>
     </div>
 
 
-                <div class="form-datakhsinputfix" style="margin-left: 5px; margin-top: 10px;">
+                <div class="form-datakhsinputfix" style="margin-left: 5px; margin-top: 10px;margin-bottom: 12px;">
                     <div style="width:100% ; height:15px;background-color:black; border-radius: 3px;"></div>
                     <div>
                     </form>
-                    <table class="datakhsinputfix" style="text-align:center;margin-top: 20px;padding: auto;">
+                    <table style="text-align:center;margin-top: 20px;padding: auto;">
                         <tr style="border-bottom:1px solid black;">
                           <th scope="col" style="text-align: center;width:3%">NO</th>
                           <th scope="col" style="text-align: center;width:15%">MATA KULIAH</th>
@@ -224,7 +234,7 @@
                       <tr style="background-color:CCCCCC;border-bottom:1px solid black">
                         <th scope="row">1</th>
                         <td>WEB PROGRAMMING</td>
-                        <td> <div class="badge badge-danger" style="border-radius: 30px; width: 25%;height:40%;font-size:12pt;color: white;">8</div></td>
+                        <td> <div class="badge badge-danger" style="border-radius: 30px;padding-top: 7px;width: 30%;height:35px;font-size:12pt;color: white;">8</div></td>
                         <td>A</td>
                         <td>4.00</td>
                         <td>32.00</td>
@@ -234,7 +244,7 @@
                       <tr style="border-bottom:1px solid black;">
                         <th scope="row">2</th>
                         <td>COMPUTER SYSTEMS</td>
-                        <td> <div class="badge badge-primary" style="border-radius: 30px; width: 25%;height:40%;font-size:12pt;color: white;">6</div></td>
+                        <td> <div class="badge badge-primary" style="border-radius: 30px;padding-top: 7px;width: 30%;height:35px;font-size:12pt;color: white;">6</div></td>
                         <td>B-</td>
                         <td>2.89</td>
                         <td>17.34</td>   
@@ -243,7 +253,7 @@
                       <tr style="background-color:CCCCCC;border-bottom:1px solid black">
                         <th scope="row">3</th>
                         <td>INTRODUCTION TO OPERATING SYSTEMS</td>
-                        <td> <div class="badge badge-success" style="border-radius: 30px; width: 25%;height:40%;font-size:12pt;color: white;">4</div></td>
+                        <td> <div class="badge badge-success" style="border-radius: 30px;padding-top: 7px;width: 30%;height:35px;font-size:12pt;color: white;">4</div></td>
                         <td>A</td>
                         <td>4.00</td>
                         <td>16.00</td>
@@ -252,7 +262,7 @@
                       <tr style="border-bottom:1px solid black;">
                         <th scope="row">4</th>
                         <td>DISTRIBUTED SYSTEMS</td>
-                        <td> <div class="badge badge-success" style="border-radius: 30px; width: 25%;height:40%;font-size:12pt;color: white;">4</div></td>
+                        <td> <div class="badge badge-success" style="border-radius: 30px;padding-top: 7px;width: 30%;height:35px;font-size:12pt;color: white;">4</div></td>
                         <td>A</td>
                         <td>4.00</td>
                         <td>16.00</td>
@@ -261,10 +271,10 @@
                      <tr style="border-bottom:1px solid black;">
                         <th scope="row"> </th>
                         <td>JUMLAH</td>
-                        <td> <div class="badge badge-dark" style="border-radius: 30px; width: 25%;height:40%;font-size:12pt;color: white;">4</div></td>
+                        <td> <div class="badge badge-dark" style="border-radius: 30px;padding-top: 7px;width: 30%;height:35px;font-size:12pt;color: white;">4</div></td>
                         <td></td>
                         <td></td>
-                        <td> <div class="badge badge-dark" style="border-radius: 30px; width: 25%;height:40%;font-size:12pt;color: white;">81.34</div></td>
+                        <td> <div class="badge badge-dark" style="border-radius: 30px;padding-top: 7px;width: 30%;height:35px;font-size:12pt;color: white;">81.34</div></td>
                      </tr>
     
                      
@@ -295,3 +305,4 @@
       feather.replace()
     </script>
 </body>
+</html>
