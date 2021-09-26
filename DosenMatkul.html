@@ -38,25 +38,35 @@
         font-size: 14pt;
       }
       .form-matkuldosen{
-    border:1px solid black;
-    max-height: 100%;
-    width : 100%;
-    margin-left: 8px; 
-    margin-top:7px;
-    border-color: black;
-    border-radius: 10px;
-    float: left;
-  }
-  .form-matakuliah{
-    border:1px solid black;
-    max-height: 100%;
-    width : 200%;
-    margin-left: 8px; 
-    margin-top:7px;
-    border-color: black;
-    border-radius: 10px;
-    float: left;
-  }
+      border:1px solid black;
+      height:200px;
+      width : 100%;
+      margin-left: 8px; 
+      margin-top:7px;
+      border-color: black;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      float: left;
+      }
+      .form-matakuliah{
+      border:1px solid black;
+      height:600px;
+      width : 195%;
+      margin-left: 8px; 
+      margin-top:7px;
+      border-color: black;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      float: left;
+      }
+
+      table form-matakuliah th,td,tr {
+        padding:10px;
+      }
+
+      tr,td{
+        font-weight: 600;
+      }
   
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -123,12 +133,13 @@
                 <div style="font-weight: 900; margin-left: 10px;font-size: 20pt; margin-top: 6px; width:50%;"> Data Matakuliah Dosen 
               </ul>
               <div class="form-matkuldosen" style="margin-left: 4px; margin-top:10px;margin-bottom:4px;">
-                <div style="width:100% ; height:15px;background-color:black; border-radius: 3px;"></div>
+                <div style="width:100% ; height:30px;background-color:black; border-top-left-radius: 10px;
+                border-top-right-radius: 10px;"></div>
                 <div>
                 </form>
-                <table class="matkuldosen" style="text-align:center;margin-top: 20px;padding: auto;margin-bottom:-1px;">
-                    <tr style="border-bottom:1px solid black;">
-                      <th scope="col" style="text-align: center;width:3%">MD</th>
+                <table class="matkuldosen" style="text-align:center;margin-top: 20px;margin-bottom:-1px;margin:10px;">
+                    <tr style="border-bottom:1px solid black;letter-spacing: 3px;">
+                      <th scope="col" style="text-align: center;width:3%">NO</th>
                       <th scope="col" style="text-align: center;width:3%">KODE MK</th>
                       <th scope="col" style="text-align: center;width:8%">MATA KULIAH</th>
                       <th scope="col" style="text-align: center;width:5%">OPTION</th>
@@ -169,12 +180,13 @@
            </form>
             </div>
               <div style="font-weight: 900; margin-left: 4px;font-size: 12pt; margin-top: 10px; width:50%;margin-bottom: 8%;">Mata Kuliah
-                <div class="form-matakuliah" style="margin-left: 5px; margin-top:8px;margin-bottom: 4px;">
-                  <div style="width:100% ; height:15px;background-color:black; border-radius: 3px;"></div>
+                <div class="form-matakuliah" style="margin-left: 5px; margin-top:8px;margin-bottom: 10px;margin-right: 5px;">
+                  <div style="width:100% ; height:15px;background-color:black; border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;"></div>
                   <div>
                   </form>
-                  <table class="matakuliah" style="text-align:center;margin-top:12px;padding: auto;">
-                      <tr style="border-bottom:1px solid black;">
+                  <table class="matakuliah" style="text-align:center;margin-top:12px;padding: auto;margin:10px;">
+                      <tr style="border-bottom:1px solid black;letter-spacing: 3px;">
                         <th scope="col" style="text-align: center;width:3%">NO</th>
                         <th scope="col" style="text-align: center;width:5%">KODE</th>
                         <th scope="col" style="text-align: center;width:15%">MATA KULIAH</th>
@@ -314,9 +326,6 @@
               </div>
               </div>
             </div>
-
-               
-                
               </div>
             </div>
           </div>
