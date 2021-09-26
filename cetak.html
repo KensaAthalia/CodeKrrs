@@ -8,6 +8,7 @@
       #content {
       min-height: calc(100vh - 30px);
       }
+
       nav a{
         text-decoration: none!important;
         color: white;
@@ -20,7 +21,7 @@
       float: left;
       }
 
-    .form{
+      .form{
         border:1px solid black;
         height :90%;
         width : 70%;
@@ -41,7 +42,18 @@
           border:0.5px solid black;
           padding:5px;
       }
-      
+      .nav-tabs{
+        border-bottom: 1pt solid black!important;
+        font-size: 14pt;
+        text-align: center;
+        margin-top: 5pt;
+      }
+
+      .nav-bawah{
+        background:black;
+        height: 3px;
+      }
+
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -122,14 +134,16 @@
               <ul class="nav nav-tabs">
                 <li class="nav-items">
                   <a class="nav-link active" href="HistoryChat.html" style="font-weight: 900; color: black;letter-spacing: 3pt; font-size: 8pt;">CETAK KRRS</a>
+                  <div class="nav-bawah"></div>
                 </li>
                <div style="padding-top: 20pt;color: black;"></div>
               </ul>
-             &nbsp &nbsp &nbsp
+                   &nbsp &nbsp &nbsp
               <div class="col-2">
                 <a href="#" type="button" class="btn" style="background-color:  #A01627; color:white; width: 120px; float: right; border-radius: 30px; margin-right: -620pt;">
                   <img src="asset/PRINT KRRS.png" alt="Cetak" style="float: left; width: 25px; padding: 0;">  
                   <div style="font-weight: bold; float: left; margin-left: 6px;">Cetak</div> 
+
                 </a>
               </div>
               <div class="form" style="padding-bottom:10%;">
@@ -172,7 +186,7 @@
                     </table>
                         <div>
                             <form >
-                                <table class="hasilkrrs" style="text-align:center;margin-top: 20px;margin-left: 10px;width:98%;">
+                                <table class="hasilkrrs" style="text-align:center;margin-top: 20px;width:100%;">
                                     <tr>
                                         <th>Kode</th>
                                         <th>Matkul</th>
