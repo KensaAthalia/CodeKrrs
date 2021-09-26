@@ -36,6 +36,11 @@
       .nav-tabs{
         border-bottom: 1pt solid black!important;
         font-size: 14pt;
+        margin-top: 1pt;
+      }
+      .nav-bawah{
+        background:black;
+        height: 3px;
       }
      .form-pertanyaanmahasiswa{
     border:1px solid black;
@@ -68,60 +73,70 @@
 <body>
   <header class="container-fluid" style="background-color: #7E1724; padding: 10px;">
     <div class="row">
-      <div class="col">
-        <img src="asset/untarputih.png" alt="logo" style="width: 60px; margin-left: 5px;">
+        <div class="col">
+          <img src="asset/untarputih.png" alt="logo" style="width: 60px; margin-left: 25px; margin-top: 3pt;">
+        </div>
+        <div class="col-9" style="color: white;">
+          <p style="font-weight: bold;font-size: xx-large; margin-top: 10pt;">KRRS ONLINE MAHASISWA</p> 
+        </div>
+        <div class="col-2">
+          <a href="Index.html" id="logout" type="button" class="btn" style="background-color: white; color: #A01627; width: 120px; float: right; border-radius: 30px; margin: 10%;">
+            <img src="asset/logout.png" alt="exit" style="float: left; width: 25px; padding: 0;">  
+            <div style="font-weight: bold; float: left; margin-left: 5px;">Logout</div> 
+          </a>
+        </div>
       </div>
-      <div class="col-9" style="color: white;">
-        <p style="font-weight: bold;font-size: xx-large;">KRRS ONLINE MAHASISWA</p> 
-      </div>
-      <div class="col-2">
-        <a href="Index.html" id="logout" type="button" class="btn" style="background-color: white; color: #A01627; width: 120px; float: right; border-radius: 30px; margin: 10%;">
-          <img src="asset/logout.png" alt="exit" style="float: left; width: 25px; padding: 0;">  
-          <div style="font-weight: bold; float: left; margin-left: 6px;">Logout</div> 
-        </a>
-      </div>
-    </div>
   </header>
   <div id="content">
     <div class="container-auto">
-      <div class="row">
-          <div class="col-2 pl-4" style="background-color: #A01627; min-height: 100vh;">
-              <div class="container-auto" style="margin-top: 10px;">
-                  <img src="asset/jennie.png" alt="jennie"
-                    style="width: 95px; height: 95px; border-radius: 50%; margin-left: 30%; margin-top: 5%;">
-                    <div style="text-align: center; color: white;">
-                      <p>
-                        Nama Lengkap
-                        <br>
-                        Admin
-                      </p>
-                    </div>
-                </div>
-              <nav class="nav flex-column ml-2">
-                <li class="nav-item">
-                  <img src="asset/HOME WHITE.png" alt="home" class="nav_img">
-                  <a class="nav-link" href="AdminHome.html"> Home</a>
-                </li>
-                <li class="nav-item">
-                  <img src="asset/ManajemenPutih.png" alt="home" class="nav_img">
-                  <a class="nav-link" href="DataMatkul.html">Manajemen Data</a>
-                </li>
-                <li class="nav-item">
-                  <img src="asset/KRRS REGULER.png" alt="krrs" class="nav_img">
-                  <a class="nav-link" href="krrsmasuk.html">KRRS Masuk</a>
-                </li>
-                <li class="nav-item">
-                  <img src="asset/PertanyaanPutih.png" alt="cetak" class="nav_img">
-                  <a class="nav-link active" href="PertanyaanMahasiswa.html">Pertanyaan Mahasiswa</a>
-                </li>
-              </nav>
-          </div>
+        <div class="row">
+            <div class="col-2 pl-4" style="background-color: #A01627; min-height: 100vh;">
+                <div class="container-auto" style="margin-top: 10px;">
+                    <img src="asset/jennie.png" alt="jennie"
+                      style="width: 70px; height: 70px; border-radius: 50%; margin-left: 35%; margin-top: 5%;">
+                      <div style="text-align: center; color: white;">
+                        <p>
+                          KIM JENNIE
+                          <br>
+                          <div>
+                          <div style="text-align: center; color: white; font-size: 8pt; margin-top: -14pt;">
+                          Admin
+                        </p>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+                <nav class="nav flex-column ml-2">
+                  <li class="nav-item">
+                    <img src="asset/HOME WHITE.png" alt="home" class="nav_img" style="margin-right: 10pt; margin-left: 10pt; margin-top: 5pt;" >
+                    <a class="nav-link active" href="AdminHome.html"> Home</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <img src="asset/ManajemenPutih.png" alt="home" class="nav_img" style="margin-right: 10pt; margin-left: 10pt; margin-top: 5pt;">
+                    <a class="nav-link" href="DataMatkul.html ">Manajemen Data</a>
+                  </li>
+                  <li class="nav-item">
+                    <img src="asset/KRRS REGULER.png" alt="krrs" class="nav_img" style="margin-right: 10pt; margin-left: 10pt; margin-top:-13pt;">
+                    <a class="nav-link" style="margin-right: 10pt; margin-left: 10pt; margin-top: -15pt;" href="krrsmasuk.html">KRRS Masuk</a>
+                  </li>
+                  <li class="nav-item">
+                    <img src="asset/PertanyaanPutih.png" alt="cetak" class="nav_img" style="margin-right: 10pt; margin-left: 10pt; margin-top: 13pt;">
+  
+                    <a class="nav-link" href="PertanyaanMahasiswa.html"> 
+                      Pertanyaan
+                      <div style="margin-left: 17pt;">Mahasiswa</div></a>
+  
+  
+                  </li>
+                </nav>
+            </div>
          
           <div class="col">
             <div class="container-fluid">
                 <ul class="nav nav-tabs" style="font-size: 12pt;">
                 <li class="nav-items">
-                <a class="nav-link active" href="pertanyaanmahasiswa.html"style="font-weight: bold;">PERTANYAAN MAHASISWA</a>
+                <a class="nav-link active" href="pertanyaanmahasiswa.html"style="font-weight:800; letter-spacing: 3pt; font-size: 8pt; color: black;">PERTANYAAN MAHASISWA</a>
                   <div class="nav-bawah"></div>
               </li>
 
