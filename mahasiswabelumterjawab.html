@@ -163,7 +163,7 @@
                 <textarea class="form-control" id="isian" rows="8"  placeholder="Ketikkan Jawaban disini"></textarea>
               </div>    
             </div>
-            <a href="mahasiswabelumterjawab.html" type="button" class="btn btn-primary" style="border-radius: 20pt; width: 100pt;font-size:15pt;margin-top: 25px;background-color: #A01627;margin-left: 40%;">Simpan</a>
+            <a href="mahasiswabelumterjawab.html"id="Simpan" type="button" class="btn btn-primary" style="border-radius: 20pt; width: 100pt;font-size:15pt;margin-top: 25px;background-color: #A01627;margin-left: 40%;">Simpan</a>
           </div>
         </div>
           
@@ -181,6 +181,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script>
       feather.replace()
+         $('#Simpan').click((e)=>{
+        title: 'Save Data';
+        if (confirm("Data berhasil disimpan")) {
+          $('#Simpan').attr('href','mahasiswabelumterjawab.html');
+        } else {
+          $('#Simpan').attr('href','#');
+        }
+        });
       $('#logout').click((e)=>{
         title: 'Logout Confirmation';
         if (confirm("Anda ingin logout?")) {
