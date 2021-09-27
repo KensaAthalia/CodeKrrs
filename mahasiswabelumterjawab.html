@@ -36,7 +36,21 @@
       .nav-tabs{
         border-bottom: 1pt solid black!important;
         font-size: 14pt;
+        margin-top: 1pt;
       }
+      .nav-bawah{
+        background:black;
+        height: 3px;
+      }
+
+      .button-simpan{
+        background-color:#7E1724 !important;
+        color: white !important;
+        text-align: center !important;
+        padding-top: 5!important;
+        border-radius: 100pt;
+      }
+
      .form-mahasiswabelumterjawab{
     border:1px solid black;
     max-height: 100%;
@@ -49,7 +63,7 @@
   }
   .form-group{
     border:1px solid black;
-    max-height: 100%;
+    max-height: 98%%;
     width : 98%;
     margin-left: 29px; 
     margin-top:7px;
@@ -64,18 +78,19 @@
 <body>
   <header class="container-fluid" style="background-color: #7E1724; padding: 10px;">
     <div class="row">
-        <div class="col">
-          <img src="asset/untarputih.png" alt="logo" style="width: 60px; margin-left: 25px; margin-top: 3pt;">
-        </div>
-        <div class="col-9" style="color: white;">
-          <p style="font-weight: bold;font-size: xx-large; margin-top: 10pt;">KRRS ONLINE MAHASISWA</p> 
-        </div>
-        <div class="col-2">
-          <a href="Index.html" id="logout" type="button" class="btn" style="background-color: white; color: #A01627; width: 120px; float: right; border-radius: 30px; margin: 10%;">
-            <img src="asset/logout.png" alt="exit" style="float: left; width: 25px; padding: 0;">  
-            <div style="font-weight: bold; float: left; margin-left: 5px;">Logout</div> 
-          </a>
-        </div>
+      <div class="col">
+        <img src="asset/untarputih.png" alt="logo" style="width: 60px; margin-left: 25px; margin-top: 3pt;">
+      </div>
+      <div class="col-9" style="color: white;">
+        <p style="font-weight: bold;font-size: xx-large; margin-top: 10pt;">KRRS ONLINE MAHASISWA</p> 
+      </div>
+      <div class="col-2">
+        <a href="Index.html" id="logout" type="button" class="btn" style="background-color: white; color: #A01627; width: 120px; float: right; border-radius: 30px; margin: 10%;">
+          <img src="asset/logout.png" alt="exit" style="float: left; width: 25px; padding: 0;">  
+          <div style="font-weight: bold; float: left; margin-left: 5px;">Logout</div> 
+        </a>
+      </div>
+    </div>
       </div>
   </header>
   <div id="content">
@@ -100,7 +115,7 @@
                 <nav class="nav flex-column ml-2">
                   <li class="nav-item">
                     <img src="asset/HOME WHITE.png" alt="home" class="nav_img" style="margin-right: 10pt; margin-left: 10pt; margin-top: 5pt;" >
-                    <a class="nav-link" href="AdminHome.html"> Home</a>
+                    <a class="nav-link active" href="AdminHome.html"> Home</a>
                   </li>
   
                   <li class="nav-item">
@@ -113,9 +128,12 @@
                   </li>
                   <li class="nav-item">
                     <img src="asset/PertanyaanPutih.png" alt="cetak" class="nav_img" style="margin-right: 10pt; margin-left: 10pt; margin-top: 13pt;">
+  
                     <a class="nav-link" href="PertanyaanMahasiswa.html"> 
                       Pertanyaan
                       <div style="margin-left: 17pt;">Mahasiswa</div></a>
+  
+  
                   </li>
                 </nav>
             </div>
@@ -123,29 +141,30 @@
             <div class="container-fluid">
                 <ul class="nav nav-tabs" style="font-size: 12pt;">
                 <li class="nav-items">
-                <a class="nav-link active" href="pertanyaanmahasiswa.html"style="font-weight: bold;text-decoration: underline;">PERTANYAAN MAHASISWA</a>
+                <a class="nav-link active" href="pertanyaanmahasiswa.html"style="font-weight: 800; letter-spacing: 3pt; font-size: 8pt; color: black;">PERTANYAAN MAHASISWA</a>
+                <div class="nav-bawah"></div>
                 </li>  
             </ul>
             <form>
-                  <div class="form-mahasiswabelumterjawab" style="margin-left: 1%; margin-top: 6%;">
+                  <div class="form-mahasiswabelumterjawab" style="margin-top: 4%;">
                     <div style="width:100% ; height:15px;background-color:black; border-top-left-radius: 5px;border-top-right-radius: 5px;"></div>
                       <div style="padding-left: 1%;padding-top: 3%;">
-                        <h3 style="font-weight: 800;"><strong>Pertanyaan Anda</strong></h3>
+                        <h3 style="font-weight: 800; margin-top: -15pt; margin-bottom: 10pt;"><strong>Pertanyaan Anda</strong></h3>
                         <h4>Selamat pagi Admin, saya ingin bertanya, untuk FTI jam mengisi KRRS nya itu jam berapa yaa, Min? Terima kasih.</h4>
+                        <div style="margin-bottom: 20pt;"></div>
                       </div>
                     </div>
                   </div>
-            </form>
             <div>
-              <h2 style="font-weight: 800;margin-left: 2%;"><strong>Jawaban Admin :</strong> </h2>
-              <div class="form-group">
+              <h2 style="font-weight: 800;margin-left: 5%; margin-top: 10%;"><strong>Jawaban Admin :</strong> </h2>
+              <div class="form-group" style="margin-left: 10pt;">
                 <textarea class="form-control" id="isian" rows="8"  placeholder="Ketikkan Jawaban disini"></textarea>
               </div>    
             </div>
           </div>
         </div>
-              <a href="#" class="btn btn-danger" style="color: white; width: 150px;height: 50px; 
-            border-radius: 100px; margin-top: 10px; font-weight: bold; font-size: 18pt;padding-left:3px;margin-left: 45%;">Simpan</a>     
+              <a href="#" class="btn button-simpan" style="width: 150px;height: 50px; 
+            border-radius: 100pt; margin-top: -200pt; font-weight: bold; font-size: 18pt;margin-left: 50%;">Simpan</a>   
       </div>
           </div>
         </div>
